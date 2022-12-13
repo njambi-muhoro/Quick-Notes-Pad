@@ -13,12 +13,12 @@ body{
     border: 3px solid red;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 40px; */
     border-radius: 2rem;
 }
 #stylingDiv{
     border: 3px solid purple;
-    border-radius: 2rem;
+    border-radius: 0.3rem;
     background-color:rgb(60,37,94)
 
 }
@@ -59,7 +59,7 @@ a{
     flex-direction: column;
 }
 #userImage{
-    width: 15%;
+    width: 80%;
     border-radius: 50%;
     padding-bottom: 15px;
 }
@@ -74,7 +74,7 @@ a{
     margin: 0 auto;
     width: 75%;
     display: flex;
-    /* flex-wrap: ; */
+    flex-wrap: wrap ;
     gap: 40px;
 }
 #fillForm{
@@ -102,4 +102,16 @@ a{
 }
 #deleteBtn{
     background-color: red;
+}
+.bottomPartStylings{
+    border: 2px solid black;
+    /*  */
+     border-radius:0.3rem
+}
+
+@media (width:778px){
+    #mainBody{
+        width: 100%;
+    }
+
 }
