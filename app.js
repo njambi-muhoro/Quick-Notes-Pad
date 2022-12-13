@@ -23,6 +23,7 @@ function displayNoteDetail(note){
     // console.log("I am, executed")
     const parentNotesDiv = document.querySelector("#mainNote")
    const singleNoteDiv = document.createElement("div")
+   singleNoteDiv.innerText= ""
    singleNoteDiv.setAttribute("id", "note")
    parentNotesDiv.appendChild(singleNoteDiv)
 
@@ -40,26 +41,37 @@ function displayNoteDetail(note){
 
    const deleteButtonParagraph = document.createElement("p")
    const deleteButton = document.createElement("Button")
+   deleteButtonParagraph.setAttribute("id", "paragraph")
    deleteButton.setAttribute("id", "deleteBtn")
    deleteButton.innerHTML = "Delete"
    deleteButtonParagraph.appendChild(deleteButton)
    buttonDIv.appendChild(deleteButtonParagraph);
 
-   const editButtonParagraph = document.createElement("p")
-   const editButton = document.createElement("Button");
-   editButton.setAttribute("id", "editNoteButton")
-   editButton.innerHTML = "Edit";
-   editButtonParagraph.appendChild(editButton)
-   buttonDIv.appendChild(editButtonParagraph)
+   let divId = parseInt(note.id)
    
+   if(divId%2 !== 1){
+    singleNoteDiv.style.background = "linear-gradient(90deg, rgba(239, 233, 240, 1), rgba(219, 169, 180, 1))"
+   }else {
+    singleNoteDiv.style.background = "linear-gradient(90deg, rgba(179, 204, 217, 1), rgba(189, 238, 248, 1))"
+   }
+
+
+
+   // add an addEventListener to our delete button because this is where we can access note.id
+   deleteButton.addEventListener("click", ()=>{
+    
+        deleteNote(note)
+   })
 }
+
+   
 
 
  noteForm.addEventListener("submit", handleSubmitFormEvent);
 
  function handleSubmitFormEvent(e){
     e.preventDefault();
-    console.log("hurray")
+    
     let notesData = {
         title:document.getElementById("notepadTitle").value,
         notes:document.getElementById("noteList").value
@@ -77,15 +89,14 @@ function displayNoteDetail(note){
         },
         body: JSON.stringify(notesInfo)
     })
-    .then()
+    fetchNotes();
  }
 
-// we make a patch request: this will let the user edit something in their title or text area
-// add an eventListener to the edit button
+ // Delete 
+    function deleteNote(note){        
+        fetch(`https://project-backend-production.up.railway.app/notePad/${note.id}`,{
+            method: "DELETE"            
+        })        
+    }
 
-const editPatchBtn = document.getElementById("editNoteButton");
-// editPatchBtn.addEventListener('click', ()=>{
-//     patchDetails(noteList)
-// })
 
-const deleteButtonOnDisplay = document.getElementById("")
