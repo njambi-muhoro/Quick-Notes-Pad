@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Notes App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./app.css">
+
+</head>
+
+<body>
+    <div id="mainBody">
+        <div id="stylingDiv">
+            <div id="nav">
+                <div id="title">
+                    <i class="fa fa-cloud" style="font-size:24px;"></i>
+                    <h1>Quick Notes</h1>
+                </div>
+                <div id="appInfo">
+                    <a href="Home">Home</a>
+                    <a href="About">About</a>
+                    <a href="Contact us">Contact us</a>
+                </div>
+                <div id="userName">
+                    <img src="./images/header.jpg" id="userImage" alt="">
+                    <input type="text" placeholder="UserName">
+                </div>
+            </div>
+        </div>
+        <div id="divButton">
+            <button id="formBtn">Write Notes</button>
+        </div>
+
+        <div id="fillForm">
+            <form action="" id="ourForm" style="display:none">
+                <label for="title"></label>
+                <input type="text" name="title" id="notepadTitle" placeholder="Title">
+                <textarea name="list" id="noteList" cols="40" rows="1"></textarea>
+                <button id="postButton">Post</button>
+            </form>
+   
+        </div>
+        <div id="mainNote">
+
+        </div>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
