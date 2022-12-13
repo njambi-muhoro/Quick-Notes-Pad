@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#mainBody{
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 2rem;
+}
+#stylingDiv{
+    border: 3px solid purple;
+    border-radius: 2rem;
+    background-color:rgb(60,37,94)
+
+}
+#nav{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 75%;
+}
+#title{
+border: 2px solid red;
+width: 20%;
+height: 100px;
+/* padding-right: 20px; */
+}
+h1{
+    color: white;
+}
+#appInfo{
+    border:2px solid yellow;
+    text-align: center;
+    display: flex;
+    width: 30%;
+    gap: 40px;
+}
+a{
+    font-size: 20px;
+    color: white;
+}
+#userName{
+    border: 2px solid black;
+    width: 20%;
+    text-align: center;
+    align-items: center;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+}
+#userImage{
+    width: 15%;
+    border-radius: 50%;
+    padding-bottom: 15px;
+}
+#divButton{
+    margin: 0 auto;
+    border: 2px solid red;
+    text-align: center;
+    width: 75%;
+}    
+#mainNote{
+    border: 2px solid blue;
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    /* flex-wrap: ; */
+    gap: 40px;
+}
+#fillForm{
+    width: 75%;
+    margin: 0 auto;
+    border:3px solid green;
+}
+#ourForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#note{
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+#editBtn{
+    border: 2px solid red;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+#deleteBtn{
+    background-color: red;
+}
