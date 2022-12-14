@@ -11,6 +11,7 @@ A user is able to
 1. Able to write notes on the quick note pad
 2. Able to see all their notes on the home page
 3. Able to delete the note if they no longer need it 
+4. Able to edit their notes if need be
 ___
 ## Setup/Installation Requirements
 This app is written using Javascript. To run it, ensure to have a properly set node environment. 
