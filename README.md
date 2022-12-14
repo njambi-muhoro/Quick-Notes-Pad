@@ -33,5 +33,5 @@ ___
 ___
 ### License
 
-This is under the [MIT]([LICENSE](https://github.com/njambi-muhoro/Quick-Notes-Pad/blob/main/License)) license
+This is under the [MIT](https://github.com/njambi-muhoro/Quick-Notes-Pad/blob/main/License) license
 Copyright © 2022  **Lucy Njambi Muhoro**
