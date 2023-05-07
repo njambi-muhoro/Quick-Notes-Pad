@@ -3,7 +3,7 @@
 #### By *Lucy Njambi Muhoro*
 ___
 ### Description
-With access to appliances and the internet it's easier to have verything in our appliances on the go. The Quick Notes writing pad makes it easier to write down notes without having to buy notebooks and it's easily 
+With access to appliances and the internet it's easier to have everything in our appliances on the go. The Quick Notes writing pad makes it easier to write down notes without having to buy notebooks and it's easily 
 accessible
 ___
 ### Minimal Viable Product 
